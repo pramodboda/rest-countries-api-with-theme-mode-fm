@@ -14,10 +14,10 @@ function App() {
       <Header />
 
       {/* Form controls */}
-      <div className="country-search-controls">
-        <div className="wrapper country-search-controls-wrapper">
-          <input type="text" />
-          <div className="custom-select">
+      <div className="search-country-controls">
+        <div className="wrapper search-country-controls-wrapper">
+          <input type="text" className="search-country-input" />
+          <div className="select-country">
             <select>
               <option value="">Filter by Region</option>
               <option value="india">India</option>
@@ -31,7 +31,7 @@ function App() {
         </div>
       </div>
       {/* Countries */}
-      {/* <div className="countries-container">
+      <div className="countries-container">
         <div className="wrapper ">
           <div className="countries-wrapper">
             {Data_URL
@@ -42,13 +42,27 @@ function App() {
                       <div className="country-card-flag-img">
                         <img src={country.flag} alt={country.name} />
                       </div>
+                      <div className="country-info">
+                        <div className="country-name">
+                          <h3>{country.name}</h3>
+                          <p>
+                            <strong>Population:</strong> {country.population}
+                          </p>
+                          <p>
+                            <strong>Population:</strong> {country.population}
+                          </p>
+                          <p>
+                            <strong>Capital:</strong> {country.capital}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   );
                 })
               : "Something is went wrong, Please try again!"}
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="ui-check">
         <img src={DesktopView} alt="test" />

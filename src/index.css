@@ -2,7 +2,7 @@
 
 :root {
   font-family: "Nunito Sans", sans-serif;
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
 
   /* background-color: #242424; */
 
@@ -19,4 +19,5 @@
 }
 body {
   font-size: 1rem;
+  background: #ccc;
 }
